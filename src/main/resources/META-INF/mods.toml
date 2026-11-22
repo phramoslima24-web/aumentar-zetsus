@@ -3,29 +3,37 @@ loaderVersion="[47,)"
 license="MIT"
 
 [[mods]]
-modId="narutoto_addon"
-version="1.0.0"
-displayName="Narutoto Spawn & Rewards Addon"
-authors="Addon"
-description='''Aumenta os spawns de mobs do NarutoTo e configura recompensas para ninjas renegados.'''
+modId="narutoto_mangekyou"
+version="2.8.1"
+displayName="Narutoto - Mangekyou Addon"
+description='''
+Addon para o Narutoto: Ninja World. Implantes de Mangekyou (Itachi, Shisui, Madara, com Izanagi e Izanami; Sasuke com Amaterasu) e Rinne Sharingan com jutsus no menu de dojutsu.
+'''
 
-[[dependencies.narutoto_addon]]
-modId="forge"
-mandatory=true
-versionRange="[47,)"
-ordering="NONE"
-side="BOTH"
+[[dependencies.narutoto_mangekyou]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
 
-[[dependencies.narutoto_addon]]
-modId="minecraft"
-mandatory=true
-versionRange="[1.20.1,1.20.2)"
-ordering="NONE"
-side="BOTH"
+[[dependencies.narutoto_mangekyou]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
 
-[[dependencies.narutoto_addon]]
-modId="narutoto"
-mandatory=true
-versionRange="[0.4.1,)"
-ordering="AFTER"
-side="BOTH"
+[[dependencies.narutoto_mangekyou]]
+    modId="narutoto"
+    mandatory=true
+    versionRange="[0.4.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.narutoto_mangekyou]]
+    modId="geckolib"
+    mandatory=true
+    versionRange="[4.2,)"
+    ordering="NONE"
+    side="BOTH"
